@@ -1,0 +1,94 @@
+{
+    "linkedin": {
+        "keywords": [
+            "software",
+            "developer",
+            "programmer",
+            "Sr. Developer",
+            "Senior Developer",
+            "Python",
+            "fullstack",
+            "full-stack",
+            "back-end",
+            "platform"
+        ],
+        "locations": [
+            {
+                "name": "Minneapolis",
+                "geoId": 103039849,
+                "remote": true,
+                "hybrid": true,
+                "on-site": true
+            },
+            {
+                "name": "St. Paul",
+                "geoId": 102370339,
+                "remote": true,
+                "hybrid": true,
+                "on-site": true
+            },
+            {
+                "name": "Greater MSP Area",
+                "geoId": 90000512,
+                "remote": true,
+                "hybrid": true,
+                "on-site": true
+            },
+            {
+                "name": "Hennepin County",
+                "geoId": 104137521,
+                "remote": true,
+                "hybrid": true,
+                "on-site": true
+            },
+            {
+                "name": "Minnesota",
+                "geoId": 103411167,
+                "remote": true,
+                "hybrid": true,
+                "on-site": true
+            },
+            {
+                "name": "USA",
+                "geoId": 103644278,
+                "remote": true,
+                "hybrid": false,
+                "on-site": false
+            }
+        ],
+        "date_posted": [
+            {
+                "name": "any_time",
+                "active": false,
+                "val": "hidden"
+            },
+            {
+                "name": "past_month",
+                "active": false,
+                "val": "r2592000"
+            },
+            {
+                "name": "past_week",
+                "active": false,
+                "val": "r604800"
+            },
+            {
+                "name": "past_24_hours",
+                "active": true,
+                "val": "r86400"
+            }
+        ],
+        "job_type": [
+            {
+                "name": "full-time",
+                "url_param": "F",
+                "active": true
+            },
+            {
+                "name": "contract",
+                "url_param": "C",
+                "active": true
+            }
+        ]
+    }
+}
