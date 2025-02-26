@@ -12,7 +12,7 @@ def test_url_encoding():
     if safe_string == expected_string:
         print("String encoded correctly!")
     else:
-        print("Error")
+        print("Error!")
 
 
 def main():
