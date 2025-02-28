@@ -19,7 +19,11 @@ def main():
     # scrape the webpages
     job_list = []
     for url in linkedin_urls:
-        job_list += scrape_linkedin_page(url)
+        job_list.append(url)
+    #    job_list += scrape_linkedin_page(url)
+    with open("linkedin_job_urls.txt", "w",  encoding="utf-8") as f:
+        for job in job_list:
+            print(job, file=f)
     print(len(job_list))
 
 

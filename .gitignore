@@ -1,2 +1,6 @@
 __pycache__/*
 test.py
+chromedriver-win64/*
+linkedin_job_urls.txt
+drivers/*
+linkedin/__pycache__/*
