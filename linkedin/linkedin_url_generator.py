@@ -79,5 +79,6 @@ def search_linkedin(query: list[dict]) -> str:
                 search_urls.append(LINKEDIN_SEARCH_BASE_URL_STR
                                    + keyword_param + location_param
                                    + filter_param)
+                # TODO add filter to display all results in one page?
 
     return search_urls
