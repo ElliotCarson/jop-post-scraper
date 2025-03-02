@@ -5,3 +5,5 @@ linkedin_job_urls.txt
 drivers/*
 linkedin/__pycache__/*
 config.json
+linkedin/test_scraper.py
+linkedin/__pycache__/linkedin_scraper.cpython-312.pyc
