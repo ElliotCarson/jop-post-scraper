@@ -1,6 +1,5 @@
 """Module to search linkedin jobs and return results"""
 
-
 from urllib import parse as urlp
 
 
@@ -59,12 +58,12 @@ def search_linkedin(query: list[dict]) -> str:
     for keyword in keywords:
         # encode string to avoid URL parse issues
         encoded_keyword = urlp.quote_plus(keyword)
-        keyword_param = f"&keywords={encoded_keyword}"
+        keyword_param = f"?keywords={encoded_keyword}"
 
         # In each location
         for location in locations:
             location_geoId_str = location["geoId"]
-            location_url_param_str = f"?geoId={location_geoId_str}"
+            location_url_param_str = f"&geoId={location_geoId_str}"
             location_param = location_url_param_str
             location_param += location["WT_str"]
 
@@ -76,9 +75,11 @@ def search_linkedin(query: list[dict]) -> str:
                     date_url_param_str = "&f_TPR=" + date_posted_filter["val"]
                     filter_param = date_url_param_str
                 # add website to list
-                search_urls.append(LINKEDIN_SEARCH_BASE_URL_STR
-                                   + keyword_param + location_param
-                                   + filter_param)
+                search_urls.append(
+                    LINKEDIN_SEARCH_BASE_URL_STR
+                    + keyword_param
+                    + location_param
+                    + filter_param
+                )
                 # TODO add filter to display all results in one page?
-
     return search_urls

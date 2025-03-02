@@ -24,7 +24,7 @@ def main():
     with open("linkedin_job_urls.txt", "w",  encoding="utf-8") as f:
         for job in job_list:
             print(job, file=f)
-    print(len(job_list))
+    print(f"Generated {len(job_list)} LinkedIn search page URLs")
 
 
 if __name__ == "__main__":
